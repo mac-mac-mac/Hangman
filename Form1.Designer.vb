@@ -55,11 +55,11 @@ Partial Class Form1
         Me.lblLivesTitle = New System.Windows.Forms.Label()
         Me.lblLivesNum = New System.Windows.Forms.Label()
         Me.grpSettings = New System.Windows.Forms.GroupBox()
-        Me.radColors = New System.Windows.Forms.RadioButton()
-        Me.radShapes = New System.Windows.Forms.RadioButton()
-        Me.radFruits = New System.Windows.Forms.RadioButton()
-        Me.radAll = New System.Windows.Forms.RadioButton()
         Me.radSpace = New System.Windows.Forms.RadioButton()
+        Me.radAll = New System.Windows.Forms.RadioButton()
+        Me.radFruits = New System.Windows.Forms.RadioButton()
+        Me.radShapes = New System.Windows.Forms.RadioButton()
+        Me.radColors = New System.Windows.Forms.RadioButton()
         Me.grpSettings.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -448,7 +448,7 @@ Partial Class Form1
         '
         'lblLivesTitle
         '
-        Me.lblLivesTitle.Font = New System.Drawing.Font("Rockwell Condensed", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLivesTitle.Font = New System.Drawing.Font("Rockwell Condensed", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLivesTitle.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.lblLivesTitle.Location = New System.Drawing.Point(255, 696)
         Me.lblLivesTitle.Name = "lblLivesTitle"
@@ -484,44 +484,18 @@ Partial Class Form1
         Me.grpSettings.TabStop = False
         Me.grpSettings.Text = "Word Categories (applies on new game)"
         '
-        'radColors
+        'radSpace
         '
-        Me.radColors.AutoSize = True
-        Me.radColors.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radColors.ForeColor = System.Drawing.Color.Black
-        Me.radColors.Location = New System.Drawing.Point(81, 22)
-        Me.radColors.Name = "radColors"
-        Me.radColors.Size = New System.Drawing.Size(79, 23)
-        Me.radColors.TabIndex = 0
-        Me.radColors.TabStop = True
-        Me.radColors.Text = "Colors"
-        Me.radColors.UseVisualStyleBackColor = True
-        '
-        'radShapes
-        '
-        Me.radShapes.AutoSize = True
-        Me.radShapes.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radShapes.ForeColor = System.Drawing.Color.Black
-        Me.radShapes.Location = New System.Drawing.Point(81, 46)
-        Me.radShapes.Name = "radShapes"
-        Me.radShapes.Size = New System.Drawing.Size(82, 23)
-        Me.radShapes.TabIndex = 1
-        Me.radShapes.TabStop = True
-        Me.radShapes.Text = "Shapes"
-        Me.radShapes.UseVisualStyleBackColor = True
-        '
-        'radFruits
-        '
-        Me.radFruits.AutoSize = True
-        Me.radFruits.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radFruits.ForeColor = System.Drawing.Color.Black
-        Me.radFruits.Location = New System.Drawing.Point(243, 22)
-        Me.radFruits.Name = "radFruits"
-        Me.radFruits.Size = New System.Drawing.Size(74, 23)
-        Me.radFruits.TabIndex = 2
-        Me.radFruits.TabStop = True
-        Me.radFruits.Text = "Fruits"
-        Me.radFruits.UseVisualStyleBackColor = True
+        Me.radSpace.AutoSize = True
+        Me.radSpace.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radSpace.ForeColor = System.Drawing.Color.Black
+        Me.radSpace.Location = New System.Drawing.Point(243, 46)
+        Me.radSpace.Name = "radSpace"
+        Me.radSpace.Size = New System.Drawing.Size(73, 23)
+        Me.radSpace.TabIndex = 4
+        Me.radSpace.TabStop = True
+        Me.radSpace.Text = "Space"
+        Me.radSpace.UseVisualStyleBackColor = True
         '
         'radAll
         '
@@ -536,18 +510,44 @@ Partial Class Form1
         Me.radAll.Text = "ALL"
         Me.radAll.UseVisualStyleBackColor = True
         '
-        'radSpace
+        'radFruits
         '
-        Me.radSpace.AutoSize = True
-        Me.radSpace.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radSpace.ForeColor = System.Drawing.Color.Black
-        Me.radSpace.Location = New System.Drawing.Point(243, 46)
-        Me.radSpace.Name = "radSpace"
-        Me.radSpace.Size = New System.Drawing.Size(73, 23)
-        Me.radSpace.TabIndex = 4
-        Me.radSpace.TabStop = True
-        Me.radSpace.Text = "Space"
-        Me.radSpace.UseVisualStyleBackColor = True
+        Me.radFruits.AutoSize = True
+        Me.radFruits.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radFruits.ForeColor = System.Drawing.Color.Black
+        Me.radFruits.Location = New System.Drawing.Point(243, 22)
+        Me.radFruits.Name = "radFruits"
+        Me.radFruits.Size = New System.Drawing.Size(74, 23)
+        Me.radFruits.TabIndex = 2
+        Me.radFruits.TabStop = True
+        Me.radFruits.Text = "Fruits"
+        Me.radFruits.UseVisualStyleBackColor = True
+        '
+        'radShapes
+        '
+        Me.radShapes.AutoSize = True
+        Me.radShapes.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radShapes.ForeColor = System.Drawing.Color.Black
+        Me.radShapes.Location = New System.Drawing.Point(81, 46)
+        Me.radShapes.Name = "radShapes"
+        Me.radShapes.Size = New System.Drawing.Size(82, 23)
+        Me.radShapes.TabIndex = 1
+        Me.radShapes.TabStop = True
+        Me.radShapes.Text = "Shapes"
+        Me.radShapes.UseVisualStyleBackColor = True
+        '
+        'radColors
+        '
+        Me.radColors.AutoSize = True
+        Me.radColors.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radColors.ForeColor = System.Drawing.Color.Black
+        Me.radColors.Location = New System.Drawing.Point(81, 22)
+        Me.radColors.Name = "radColors"
+        Me.radColors.Size = New System.Drawing.Size(79, 23)
+        Me.radColors.TabIndex = 0
+        Me.radColors.TabStop = True
+        Me.radColors.Text = "Colors"
+        Me.radColors.UseVisualStyleBackColor = True
         '
         'Form1
         '
