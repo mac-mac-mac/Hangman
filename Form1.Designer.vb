@@ -53,7 +53,7 @@ Partial Class Form1
         Me.btnNewGame = New System.Windows.Forms.Button()
         Me.btnHowToPlay = New System.Windows.Forms.Button()
         Me.lblLivesTitle = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblLivesNum = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -73,7 +73,7 @@ Partial Class Form1
         Me.lblWord.Name = "lblWord"
         Me.lblWord.Size = New System.Drawing.Size(559, 156)
         Me.lblWord.TabIndex = 1
-        Me.lblWord.Text = "_ _ _ _"
+        Me.lblWord.Text = "_ _ _ _ _ _ _"
         Me.lblWord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnA
@@ -366,22 +366,22 @@ Partial Class Form1
         Me.lblLivesTitle.Text = "LIVES:"
         Me.lblLivesTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label1
+        'lblLivesNum
         '
-        Me.Label1.Font = New System.Drawing.Font("Rockwell Extra Bold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(255, 720)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(75, 51)
-        Me.Label1.TabIndex = 31
-        Me.Label1.Text = "5"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblLivesNum.Font = New System.Drawing.Font("Rockwell Extra Bold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLivesNum.Location = New System.Drawing.Point(255, 720)
+        Me.lblLivesNum.Name = "lblLivesNum"
+        Me.lblLivesNum.Size = New System.Drawing.Size(75, 51)
+        Me.lblLivesNum.TabIndex = 31
+        Me.lblLivesNum.Text = "5"
+        Me.lblLivesNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(584, 786)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblLivesNum)
         Me.Controls.Add(Me.lblLivesTitle)
         Me.Controls.Add(Me.btnHowToPlay)
         Me.Controls.Add(Me.btnNewGame)
@@ -451,5 +451,5 @@ Partial Class Form1
     Friend WithEvents btnNewGame As Button
     Friend WithEvents btnHowToPlay As Button
     Friend WithEvents lblLivesTitle As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblLivesNum As Label
 End Class
