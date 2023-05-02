@@ -549,4 +549,14 @@
         updateGame()
         btnZ.Enabled = False
     End Sub
+
+    Private Sub btnHowToPlay_Click(sender As Object, e As EventArgs) Handles btnHowToPlay.Click
+        Dim msg As String
+        msg = "HOW TO PLAY:" + vbNewLine + vbNewLine
+        msg = msg + "Guess letters to fill in the secret code word, but you only have 8 lives." + vbNewLine + vbNewLine
+        msg = msg + "If you guess a letter that is in the code word, all instances of that letter will be revealed in the code word. If you guess a letter that is not in the code word, you lose one of your lives." + vbNewLine + vbNewLine
+        msg = msg + "If you lose all your lives before all letters in the code word are revealed, you lose the game! If you reveal all the letters in the code word without losing all your lives, you win the game!" + vbNewLine + vbNewLine
+        msg = msg + "You can use the radio buttons to limit the code words to a specific word category (or from all categories). This will not affect an in-progress game, but will take effect when you start a new game." + vbNewLine + vbNewLine
+        MsgBox(msg)
+    End Sub
 End Class
